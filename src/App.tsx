@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './Custom.css';
 import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Biography from './biography';
+import Projects from './projects';
 import Home from './Home';
 
 function App() {
@@ -22,13 +23,17 @@ function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/biography">Biography</Link>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="/biography">About Me</Link>
               </li>
             </ul>
           </h1>
 
           <Routes>
             <Route path="/" Component={Home} />
+            <Route path="/projects" Component={Projects} />
             <Route path="/biography" Component={Biography} />
           </Routes>
 
