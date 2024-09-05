@@ -1,0 +1,22 @@
+
+.Project-Container img{
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*object-fit: scale-down;*/
+    height: 100%;
+    width: 100%;
+}
+
+.Project-Container {
+    justify-self: center;
+}
+
+.Projects {
+    display: grid;
+    column-gap: 4em;
+    row-gap: 5em;
+    grid-template-columns: repeat(auto-fill, 20em);
+    justify-content: space-around;
+    margin-left: 4em;
+    margin-right: 4em;
+}
