@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 //import './App.css';
 import './Custom.css';
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Biography from './biography';
 import Home from './Home';
 
@@ -14,7 +14,7 @@ function App() {
 function Header() {
   return (
     <div>
-      <Router>
+      <Router basename='/'>
         <div>
           <h1>
             <ul>
